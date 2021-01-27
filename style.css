@@ -1,0 +1,66 @@
+body {
+    background-color: burlywood;
+    padding: 0;
+    margin: 0;
+}
+ 
+header {
+    background-color: darkslategrey;
+    padding: 10px 16px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 75px;
+}
+
+nav {
+    float: center;
+    font-size: 17px;
+}
+
+ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    color: darkslategray;
+    display: inline;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 80px;
+}
+
+.mandalorian {
+    height: auto;
+    width: max-content;
+}
+
+.mando {
+    height: auto;
+    width: max-content;
+}
+
+article {
+    text-align: center;
+    padding: 16px;
+    margin: 16px 220px;
+}
+
+p {
+    color:darkslategrey;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: darkslategrey;
+    color: whitesmoke;
+    padding: 10px 16px;
+    width: 100%;
+    text-align: center;
+}
