@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Mandalorian</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src=app.js></script>
 </head>
 <body>
     <header>
@@ -27,7 +28,7 @@
         <section>
             <article>
                 <h2>
-                    <script src="app.js"></script>
+                    <script>getUserName()</script>
                 </h2>
                 <br>
                 <img class="mandalorian" src="https://snworksceo.imgix.net/upb/eea3c9fb-eea0-44fd-9675-af01b3118bc8.sized-1000x1000.jpg?w=1000" alt="The Mandalorian">
@@ -44,14 +45,12 @@
             </p>
             </article>
             <article>
-                <h3>
+                <h3 id="realName">
                 Click to reveal the Mandalorian's true identity
-                </p>
+                <br><br>
                 <button onclick="reveal()">Click Me!</button> 
-                <script src="app2.js"></script>
                 </h3>
-                <h2>
-                    <script src="app1.js"></script>
+                <h2 id="bye">
                 </h2>
             </article>
 
