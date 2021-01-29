@@ -1,15 +1,13 @@
 'use strict'
 
 function getUserName(){
-    let message;
     let userName = prompt('Please Enter Your Name: ');
-    if (userName != false && userName != null) {
-        message = 'Welcome ' + userName + '!'; 
-    } else {
-        message = 'Welcome!!!';
-    }
-    document.write(message);   
-}        
+    while(userName == false || userName == null){
+        alert('A name is required to enter this page');        
+        userName = prompt('Please Enter Your Name: ');
+    } 
+    document.write('Welcome ' + userName + '!');   
+}      
 
 let byeMessage;
 
@@ -40,3 +38,15 @@ function reveal() {
     document.getElementById("realName").innerHTML = message; 
     document.getElementById("bye").innerHTML = byeMessage;   
 } 
+
+function imagesOnScreen() {
+    let userAnswer = prompt('How many Mando helmets do you want? (1 to 5)');
+    while(userAnswer < 1 || userAnswer > 5){
+        alert('invalid number!')
+        userAnswer = prompt('How many Mando helmets do you want? (1 to 5)');
+    }
+    for (let i = 0; i < userAnswer; i++){
+        document.write('<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQWnhnGUuvL36fD8T3e0_lRLP7a1KFYKnI6qs7_F54aO4Xc1dudcQgvxezPmDXi0rM1rkv0HM&usqp=CAc">')
+    }
+}
+
